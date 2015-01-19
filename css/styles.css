@@ -1,0 +1,29 @@
+table{
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+td, th{
+	border: 1px solid #ccc;
+	padding: 6px;
+}
+.rotate{
+  	white-space: nowrap;
+} 
+.rotate > div{
+	min-width: 20px;
+
+	-webkit-writing-mode: vertical-rl;
+	        writing-mode: tb-rl; /* for old IE */
+
+	-webkit-transform: rotate(0deg); /* Для Safari, Chrome, iOS */
+	   -moz-transform: rotate(0deg); /* Для Firefox */
+    	-ms-transform: rotate(0deg); /* Для IE */
+         -o-transform: rotate(0deg); /* Для Opera */
+        	transform: rotate(0deg);
+
+    -webkit-transform-origin: center top;
+       -moz-transform-origin: center top;
+         -o-transform-origin: center top;
+        -ms-transform-origin: center top;
+            transform-origin: center top;
+}
